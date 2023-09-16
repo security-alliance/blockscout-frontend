@@ -227,9 +227,11 @@ This feature is **enabled by default** with the `slise` ads provider. To switch 
 
 | Variable | Type| Description | Compulsoriness  | Default value | Example value |
 | --- | --- | --- | --- | --- | --- |
-| NEXT_PUBLIC_AD_BANNER_PROVIDER | `slise` \| `adbutler` \| `coinzilla` \| `none` | Ads provider  | - | `slise` | `coinzilla` |
+| NEXT_PUBLIC_AD_BANNER_PROVIDER | `slise` \| `adbutler` \| `coinzilla` \| `none` \| `custom` | Ads provider  | - | `slise` | `coinzilla` |
 | NEXT_PUBLIC_AD_ADBUTLER_CONFIG_DESKTOP | `{ id: string; width: string; height: string }` | Placement config for desktop Adbutler banner | - | - | `{'id':'123456','width':'728','height':'90'}` |
 | NEXT_PUBLIC_AD_ADBUTLER_CONFIG_MOBILE | `{ id: string; width: number; height: number }` | Placement config for mobile Adbutler banner | - | - | `{'id':'654321','width':'300','height':'100'}` |
+| NEXT_PUBLIC_AD_CUSTOM_BASE_URL | `string` | Base URL for ads | - | - | `https://seal-public-assets.s3.us-east-2.amazonaws.com/ads/` |
+| NEXT_PUBLIC_AD_CUSTOM_NUM_ADS | `string` | Num of ads to cycle through | - | - | `3` |
 
 &nbsp;
 

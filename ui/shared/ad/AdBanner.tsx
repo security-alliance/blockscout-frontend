@@ -7,6 +7,7 @@ import * as cookies from 'lib/cookies';
 
 import AdbutlerBanner from './AdbutlerBanner';
 import CoinzillaBanner from './CoinzillaBanner';
+import CustomBanner from './CustomBanner';
 import SliseBanner from './SliseBanner';
 
 const feature = config.features.adsBanner;
@@ -20,6 +21,8 @@ const AdBanner = ({ className, isLoading }: { className?: string; isLoading?: bo
 
   const content = (() => {
     switch (feature.provider) {
+      case 'custom':
+        return <CustomBanner/>;
       case 'adbutler':
         return <AdbutlerBanner/>;
       case 'coinzilla':
